@@ -1,0 +1,45 @@
+* {
+
+    @font-face {
+        font-family: 'Inter';
+        src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('wght');
+    }
+}
+
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.news-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+        'one one four'
+        'two three four'
+    ;
+}
+
+.news:nth-child(1) {
+    grid-area: one;
+}
+
+.news:nth-child(2) {
+    grid-area: two;
+}
+
+.news:nth-child(3) {
+    grid-area: three;
+}
+
+.news:nth-child(4) {
+    grid-area: four;
+}
